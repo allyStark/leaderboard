@@ -1,0 +1,206 @@
+.bordered {
+
+  height: 130px;
+  margin: 20px 20px 20px 20px;
+  border: 1px white solid;
+  background-color: #343436;
+}
+
+.profile-pictures {
+
+  height: 100px;
+  margin: 15px 15px 15px 15px;
+  border-radius: 25%;
+  border: 2px white solid;
+}
+
+.title-row {
+
+  height: 40px;
+  margin: 20px 20px 20px 20px;
+  border: 1px white solid;
+  background-color: #343436;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 150%;
+  color: white;
+}
+
+.table-text {
+
+  position: relative;
+  top: 37px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 200%;
+  color: white;
+}
+
+.heading-row {
+
+  font-size: 300%;
+  margin: 40px 0 25px 0;
+
+  font-family: 'Roboto Mono', monospace;
+
+  color: white;
+}
+
+i {
+
+  color: white;
+}
+
+body {
+
+  background-color: #006400;
+}
+
+.toggle {
+
+  color: white;
+  font-size: 150%;
+  position: relative;
+  right: 60px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .heading-row {
+
+    font-size: 100%;
+  }
+
+  .titles {
+
+    font-size: 30%;
+    top: 10px;
+  }
+
+  .toggle {
+
+    font-size: 80%;
+    right: 20px;
+  }
+
+  .profile-pictures {
+
+    height: 50%;
+    position: relative;
+    right: 20px;
+  }
+
+  .table-text {
+
+    font-size: 50%;
+    position: relative;
+    top: 25px;
+  }
+
+  .bordered {
+
+    height: 60px;
+  }
+
+  .switch-div {
+
+    position: relative;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .heading-row {
+
+    font-size: 150%;
+    margin-bottom: 20px;
+  }
+
+  .titles {
+
+    font-size: 30%;
+    top: 14px;
+  }
+
+  .toggle {
+
+    font-size: 80%;
+    right: 20px;
+    top: 10px;
+  }
+
+  .profile-pictures {
+
+    height: 80%;
+    position: relative;
+    right: 20px;
+    top: -8px;
+  }
+
+  .table-text {
+
+    font-size: 50%;
+    position: relative;
+    top: 25px;
+  }
+
+  .bordered {
+
+    height: 60px;
+  }
+
+  .switch-div {
+
+    position: relative;
+    left: 20px;
+  }
+}
